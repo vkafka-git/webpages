@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- Title -->
+<title>Gitam - Ethnic Ware Event Registration</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: grey;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: blue;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+		.text-Header {
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+		fieldset {
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			margin: 20px auto;
+			box-shadow: 0 0 5px #333;
+			background-color: #eee;
+		}
+		form {
+			width: 70%;
+			margin: auto;
+		}
+		input[type="text"],input[type="email"],select{
+			width: calc(100% - 40px);
+			height: 30px;
+			padding: 5px;
+			border-radius: 6px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+		button {
+			width: 100%;
+			text-align: center;
+			margin: auto !important;
+			height: 40px;
+			border-radius: 10px;
+			background-color: #eee;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background text-Header">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "https://www.gitam.edu/assets/images/gitam_logo_new.png">
+			</div>
+			<li><a href="#web">Events</a></li>
+			<li><a href="#program">Clubs</a></li>
+			<li><a href="#course">Registration</a></li>
+			<li><a href="#course">Login</a></li>
+		</ul>
+	</nav>
+
+	<section class="firstsection">
+		<!-- <div class="box-main"> -->
+			<!-- <div class="firstHalf"> -->
+				<div id="event-registration">
+					<h1>Ethnic Day Registration</h1>
+					<form id="event-registration-form" method="POST" action="">
+					  <!-- Form contents will go here -->
+					  <fieldset>
+						<h3>Personal Information</h3>
+						<label for="first-name">Name</label>
+						<input type="text" id="name" name="name" />
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" />
+						<label for="Activity">Activity</label>
+						<select id="Activity">
+							<option>-- Choose your state --</option>
+							<option>Dance</option>
+							<option>Music</option>
+							<option>Gitar</option>
+						  </select>
+					  </fieldset>
+					  <button type="button">Submit Form</button>
+				  </div>
+
+
+			<!-- </div> -->
+		<!-- </div> -->
+	</section>
+
+
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Java</h1>
+
+			<p class="sectionSubTag text-small">
+				Java has been one of the most popular
+				programming language for many years.
+				Java is Object Oriented. However it is
+				not considered as pure object oriented
+				as it provides support for primitive
+				data types (like int, char, etc) The
+				Java codes are first compiled into byte
+				code (machine independent code). Then
+				the byte code is run on Java Virtual
+				Machine (JVM) regardless of the
+				underlying architecture.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src= "img.png" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
+</body>
+
+</html>
